@@ -1,8 +1,10 @@
 
 .design-4 {
     background-color: #003638;
-    width: 20vw;
+    /* width: 20vw; */
+    width:20%;
     height:100vh;
+    /* height: 100%; */
     border-right: 2px solid #165e4f;
   }  
   .container-3{
