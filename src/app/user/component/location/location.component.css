@@ -1,0 +1,94 @@
+img{
+  position: absolute;
+margin-left: -10rem;
+margin-top: -10rem;
+
+  width:70vw;
+  height:120vh
+}
+.image2{
+  z-index:+1;
+  position: absolute;
+  width:50vw;
+  height:30vh;
+  margin-left:47rem ;
+  margin-top: 17rem;
+
+}
+
+
+.book-form {
+
+   position: absolute;
+   top:67%;
+   left: 17%;
+    width: 80%;
+    margin-top: 2rem;
+    background: #003638;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    outline: none;
+    font-family: 'Dosis', sans-serif; 
+  }
+  
+  .book-form form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .book-form form .inputBox {
+    flex: 1 1 25rem;
+  }
+  
+  .book-form form .inputBox span {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .book-form form .inputBox input {
+    outline: none;
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border-radius: 5rem;
+    border: 0.2rem solid #165e4f;;
+    font-size: 1.6rem;
+    color: #aaa;
+    text-transform: none;
+    background: none;
+    margin-top: 1rem;
+  }
+
+  .book-form form .inputBox select {
+    outline: none;
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border-radius: 5rem;
+    border: 0.2rem solid #165e4f;;
+    font-size: 1.6rem;
+    color: #aaa;
+    text-transform: none;
+    background: none;
+    margin-top: 1rem;
+  } 
+
+  .book-form form .inputBox option{
+    background-color:#165e4f ;
+    color:wheat;
+   
+  }
+
+  .book-form .btn{
+    color:#165e4f;
+    font-weight: 600;
+    border-radius:99px ;
+    font-size: 2rem;
+    outline: none;
+  }
+  
+  .book-form form .btn {
+    flex: 1 1 15rem;
+  }

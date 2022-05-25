@@ -1,0 +1,46 @@
+
+<img src="../../assets/image/gummy-location (1).png" alt="background  image">
+<img class="image2" src="../../assets/image/bonbon-flight-plane-route-from-point-a-to-point-b.png" alt="background image2">
+<section class="book-form" id="book-form">
+    <form #location="ngForm" (ngSubmit)="locationData(location.value)">
+        <div class="inputBox">
+            <span>where to? </span>
+                <select name="place" size="1" #place="ngModel" ngModel >
+                    <option value="">Please select a location </option> 
+                    <option value="Delhi" >Delhi</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Ahmadabad">Ahmadabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Kozhikode">Kozhikode</option>
+                    <option value="Agra">Agra</option>
+                    </select>
+           
+            <!-- <input type="text" placeholder="place name" value="" name="place" #place="ngModel" ngModel/> -->
+        </div>
+        <div  class="inputBox">
+            <span>when?</span>
+            <input type="date" value="" name="checkin" #checkin="ngModel" ngModel/>
+        </div>
+        <div class="inputBox">
+            <span>how many days?</span>
+            <input type="number" placeholder="number of days" value="" name="duration" #duration="ngModel" ngModel/>
+        </div>
+        
+        <input type="submit" value="find now" class="btn" />
+    </form>
+
+</section>

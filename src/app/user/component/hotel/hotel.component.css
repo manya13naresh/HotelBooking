@@ -1,0 +1,98 @@
+ .box-container {
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80rem, 1fr));
+    gap: 1.5rem;
+    font-family: 'Dosis', sans-serif; 
+  }
+  .box-container .box {
+    background: #222;
+    border-radius: 1rem;
+    padding: 4rem 4rem  2rem 4rem;
+    border: 0.2rem solid #111;
+    margin: 3rem;
+  }
+
+  .box-container .box:hover {
+    border: 0.2rem solid #219F94;
+  }
+ .box-container img{
+  margin-left: 10px;
+  float:right;
+  width:40rem;
+  height:20rem
+} 
+ .box-container span{
+  float: right;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  color: #003638;
+  font-size:2.5rem ;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.box-container .box h3 {
+  font-size: 3rem;
+ color: white;
+}
+
+.box-container .box .roomtype{
+  float: left;
+  background-color:transparent;
+  color:white;
+}
+.box-container .box .roomtype i{
+  padding-right:0.5rem;
+     padding-left:0.5rem;
+}
+
+  .box-container .box h5 {
+    font-size: 2.5rem;
+    color: #aaa;
+    line-height: 2;
+  }
+  
+  li {
+    color: white;
+    list-style: none;
+  }
+   .box-container .box i{
+     padding-right:1rem;
+     padding-left:1rem;
+     color: #219F94;
+   }
+    .box-container .box .list{
+    background-color: transparent;
+     font-size: 2rem;
+     float:left;
+     margin-left: 13rem;
+     margin-top: -8rem; 
+    
+  }
+.heading{
+    text-align: center;
+    color: #219f94; ;
+    font-family: 'Dosis', sans-serif; 
+    font-weight: 600;
+    font-size: 4rem;
+  } 
+  .box-container .box .btn{
+    float: right;
+    color:#165e4f;
+    font-weight: 600;
+    border-radius:99px ;
+    font-size: 2.5rem;
+    margin-top:2rem;
+    margin-right: 7rem;
+    outline: none;
+  }
+
+  @media (max-width: 1000px) {
+    .room .box-container .box .list { 
+      margin-left: 0rem;
+     margin-top:  0rem; 
+    
+    }
+  }
+  

@@ -1,0 +1,66 @@
+img{
+    position: absolute;
+    margin-left: 13rem;
+    margin-right: 4rem;
+    width: 80%;
+    height: 60vh;
+}
+.billing {
+    position: absolute;
+    width: 90%;
+    top:70%;
+    left:5vw;
+    background: #DBDFFD;
+    border-radius: 1rem;
+    padding: 2rem 2rem; 
+    font-family: 'Dosis', sans-serif; 
+  }
+  
+  .container{
+      display: grid;
+      grid-template-areas: 'contentBlock1 contentBlock2';
+      gap: 2px 2px;
+      color:#15133C;
+
+  }
+  .content1{
+      grid-area: contentBlock1;
+      font-size: 3rem;
+      font-weight: 600;
+      padding: 2rem 2rem;
+   
+
+  }
+  .content2{
+    grid-area: contentBlock2;
+    font-size: 3rem;
+    font-weight: 600;
+    padding:2rem 2rem;
+
+}
+.container .btn{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    background-color:#15133C ;
+    color: white;
+    outline: none;
+}
+p{
+    font-weight: 500;
+    color:#15133C;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+}
+.container span{
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.container .details{
+    background-color: transparent;
+    font-weight: 500;
+    padding-left: 3rem;
+}

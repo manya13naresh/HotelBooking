@@ -1,0 +1,111 @@
+
+img{
+    width: 57%;
+    height: 100vh
+}
+
+p{
+    color:#92B4EC;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-top:10rem;
+    padding-right: 13rem;
+    float: right;
+}
+
+.caption{
+    color: #92B4EC;
+    position:absolute;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 17rem;
+    margin-left: 7rem;
+    float: right;
+}
+.end{
+    color:#242F9B;
+    position:absolute;
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 30rem;
+    margin-left: 7rem;
+    float: right;
+
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   .logo {
+    font-weight: 600;
+   font-size: 40px;
+   color: white;
+  
+  }
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    background-color: black;
+    border-bottom: 2px solid #515151
+   }
+    .nav-links a {
+    color: white;
+   } 
+   .menu {
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+   font-weight: 500;
+   }
+   .menu li {  
+    color:white;
+    margin: 0 8px;
+    transition: 0.4s;
+    padding: 8px 16px; 
+    background-color: #219F94;
+    border-radius: 99px;
+    text-decoration: none
+   } 
+   
+  .nav-links a:hover{
+    color: #003638;
+   }
+   input[type=checkbox]{
+    display: none;
+   } 
+  
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   @media (max-width: 800px) {
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:black;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+    }
+     .menu li + li {
+     margin-top: 12px;
+    } 
+    input[type=checkbox]:checked ~ .menu{
+     display: block;
+    }
+    .hamburger {
+     display: block;
+     color: white;
+    }
+}  

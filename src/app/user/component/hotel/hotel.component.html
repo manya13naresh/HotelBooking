@@ -1,0 +1,31 @@
+<app-navbar></app-navbar> 
+ <body>
+ <h3 class="heading">Choose Hotel</h3>
+    <div class="box-container" > 
+
+        <div class="box" *ngFor="let i of hotel" >
+             <img  src="{{i.image}}" alt="hotel">  
+             <span>{{i.rating}}</span> 
+            <h3>{{i.hotelname}}</h3>
+           <h5><i class=" fas fa-location-dot fa-1x"></i>{{i.location}}</h5>
+           <span class="roomtype">
+            <li><i class="fas fa-bed fa-2xs"></i>Rs{{i.singlebed}}/per night<li>
+            <li><i class="fas fa-bed fa-2xs"></i><i class="fas fa-bed fa-2xs"></i>Rs{{i.doublebed}}/per night</li>
+            <li><i class="fas fa-bed fa-2xs"></i><i class="fas fa-bed fa-2xs"></i><i class="fas fa-bed fa-2xs"></i>Rs{{i.deluxe}}/per night</li>
+          </span> 
+           <span class="list">
+         <ul>
+               <li><i class="fas fa-wifi"></i>Free Wifi              </li>
+               <li><i class="fas fa-utensils"></i>Free Breakfast </li>
+               <li><i class="fas fa-car"></i>Free Parking         </li>
+               <li><i class="fas fa-paw"></i>Pet Care </li>
+              </ul> 
+            </span>
+              <form #booknow="ngForm" (ngSubmit) ="booking({hotelname:i.hotelname,hotellocation:i.location,singlebed:i.singlebed,doublebed:i.doublebed,deluxe:i.deluxe})"> 
+                <input type="submit" value="Book now" class="btn"  />
+            </form>
+        </div>
+
+    </div>
+
+ </body>

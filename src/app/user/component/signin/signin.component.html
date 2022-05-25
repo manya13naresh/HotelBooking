@@ -1,0 +1,35 @@
+
+<body>
+    <div class="design-5"></div>
+    <div class="container-4"> <p style="text-align:center;font-size: 30px;margin-top: 0px;">Hii Buddy!</p>
+        <form #signin="ngForm" (ngSubmit)="SigninData(signin.value)" >
+            <label for="username"><i class="fa-solid fa-user"style="padding-right:7px;"></i>   Username </label>
+            <input  type="text" name="username" required #username="ngModel"  id="username"  value=""  ngModel/>
+            <br>
+            <span *ngIf="username.touched &&  username.invalid" style="color:black;font-size: 1.5rem;">Invalid Username</span>
+            <br>
+            <label for="email"><i class="fa-solid fa-envelope"style="padding-right:7px;"></i>   Email </label>
+            <input  type="email" name="email" required  #email="ngModel" pattern="[a-zA-z123456789.@]+$" id="email"  value="" ngModel/>
+            <br>
+            <span *ngIf="email.touched&& email.invalid" style="color:black;font-size: 1.5rem;">Invalid Email</span>
+            <br>
+            <label for="password"><i class="fa-solid fa-lock" style="padding-right:7px;"></i>Password </label>
+            <input type="password" name="password" required #password="ngModel" minlength="8"  maxlength="16" pattern="[a-zA-z123456789.@]+$" id="password"  value="" ngModel/>
+            <br>
+            <span *ngIf="password.touched && password.invalid" style="color:black;font-size: 1.5rem;">Invalid Password</span>
+            <br>
+            <label for="confirmpassword"><i class="fa-solid fa-lock" style="padding-right:7px;"></i>Confirm Password </label>
+            <input type="password" name="confirmpassword" #confirmpassword="ngModel" required minlength="8"  maxlength="16" pattern="[a-zA-z123456789.@]+$" id="confirmpassword"  value="" ngModel/>
+            <br>
+            <span *ngIf="confirmpassword.touched && confirmpassword.invalid" style="color:black;font-size: 1.5rem;">Invalid Password</span>
+            <br>
+            <label for="submit"></label>
+            <input class="signin-button" style="background-color:#003638;width:27vw;padding-top: 7px;" type="submit" [disabled]="!signin.valid && signin.touched" value="Signin" />
+
+        </form>
+        </div>
+        </body>
+
+
+
+

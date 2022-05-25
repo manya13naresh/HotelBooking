@@ -1,0 +1,38 @@
+<app-navbar-admin></app-navbar-admin>
+
+<body>
+    <div class="design-4" ></div>
+    <div class="container-3" >
+        <form #addhotel="ngForm" (ngSubmit)="addhotelData(addhotel.value)" >
+            <label for="location">Location</label>
+            <input  type="text" name="location" id="location" #location="ngModel" value="" ngModel/>
+            <br>
+            <label for="hotelname">Hotel Name</label>
+            <input type="text" name="hotelname" id="hotelname" #hotelname="ngModel" value="" ngModel/>
+            <br>
+            <label for="rating">Rating</label>
+            <input type="text" name="rating" id="rating" #rating="ngModel"  value="" ngModel/>
+            <br>
+            <label for="image">Image Url</label>
+            <input type="url" name="image" id="image" #image="ngModel"  value="" ngModel/>
+            <br>
+            <!-- <img src="../../../assets/image/ITC Mughal.jpg"  -->
+            <label for="singlebed">Single Bedroom Price</label>
+            <input type="text" name="singlebed" id="singlebed" #singlebed="ngModel"  value=""ngModel/>
+            <br>
+            <label for="doublebed">Double Bedroom Price</label>
+            <input type="text" name="doublebed" id="doublebed" #doublebed="ngModel"value="" ngModel/>
+            <br>
+            <label for="deluxe">Deluxe Bedroom Price</label>
+            <input type="text" name="deluxe" id="deluxe" #deluxe="ngModel"  value="" ngModel/>
+            <br>
+            <label for="cancel"></label>
+            <input class="button" style="background-color:white;width:10vw;padding-top: 7px;" type="reset"   value="Cancle"/>
+            <label for="submit"></label>
+            <input class="button" style ="background-color:white;width:10vw;float: right;margin-top:-51px ;padding-top: 7px;" type="submit"   value="Add"/>            
+        </form> 
+    </div>
+</body>
+
+
+

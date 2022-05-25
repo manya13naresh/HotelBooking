@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+<img src="../../assets/image/cherry-584.png" alt="background">
+<section class="billing">
+    <p>Hold on!! Last Step...</p>
+    <div class="container">
+        <div class="content1">
+            <span>Hotelname</span>
+            <span class="details">{{hotelname}}</span>
+            <br>
+            <span>Check-in</span>
+            <span class="details">{{checkin}}</span>
+            <br>
+            <span>Category</span>
+            <br>
+            <form #roomtype="ngForm" (ngSubmit)="roomData(roomtype.value)" style="margin-left: 2rem;">
+                <input type="radio" name="bedroom" #bedroom="ngModel" value="single" ngModel>
+                <label for="singlebed" >Single Bedroom</label>
+                <br>
+                <input type="radio" name="bedroom"  #bedroom="ngModel" value="double" ngModel>
+                <label for="doublebed" >Double Bedroom</label>
+                <br>
+                <input type="radio" name="bedroom" #bedroom="ngModel" value="deluxebed" ngModel>
+                <label for="deluxe" >Deluxe Bedroom</label>
+                <br>
+                <input type="submit" value="Select" class="btn"  />
+
+            </form>
+        </div>
+        <div class="content2">
+            <span>Location</span>
+            <span class="details">{{hotellocation}}</span>
+            <br>
+            <span>Duration</span>
+            <span class="details">{{days}} days</span>
+            <br>
+            <span>Price</span>
+            <span class="details">{{price}}</span>
+            <br>
+            <span>Total</span>
+            <span class="details">{{total}}</span>
+            <br>
+            <p style="margin: 0px;padding-bottom: 0px;">Stay salty!!</p>
+            <br>
+            <form>
+                <input type="submit" value="Pay" class="btn" style="margin-top:-1rem;"(click)=logoutuser()/>
+            </form>
+
+        </div>
+
+    </div>
+    
+</section>
+
+
+
+

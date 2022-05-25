@@ -1,0 +1,24 @@
+
+<body>
+    <div class="design-4"></div>
+    <div class="container-3"> <p style="text-align:center;font-size: 30px;margin-top: 10px;margin-bottom: 10px;">Welcome!</p>
+        <p class="content-5">Log in to continue...</p>
+        <form  style="outline: none;" #login="ngForm" (ngSubmit)="loginData(login.value)">
+            <label for="email"><i class="fa-solid fa-envelope"style="padding-right:7px;"></i>  Email </label>
+            <input  type="email" name="email" id="email"  value=""  required pattern="[a-zA-z123456789.@]+$" #email="ngModel" ngModel/>
+            <br>
+            <span *ngIf="email.touched && email.invalid" style="color:black;font-size: 1.5rem;">Invalid Input</span>
+            <br>
+            <label for="password"><i class="fa-solid fa-lock" style="padding-right:7px;"></i>Password </label>
+            <input type="password" name="password" id="password"  value="" required #password="ngModel"  minlength="8"  maxlength="16" pattern="[a-zA-z123456789.@]+$"  ngModel/>
+            <br>
+            <span *ngIf="password.invalid && password.touched" style="color:black;font-size: 1.5rem;">Invalid Input</span>
+            <br>
+            <label for="submit"></label>
+            <input class="login-button" style="background-color:#003638;width:27vw;padding-top: 7px;"type="submit"[disabled]="!login.valid && login.touched"name="submit" id="submit"  value="Login"/>
+        </form>
+      <p style="font-size: 15px;text-align: center;">  Admin Login:<a href="/adminlogin"style="text-decoration:none;">Click Here</a></p> 
+    </div>
+</body>
+
+
